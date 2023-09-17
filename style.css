@@ -1,0 +1,464 @@
+*
+{
+    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#root 
+{
+    background-color: white;
+}
+.header 
+{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top:0;
+    background-color: white;
+    box-shadow: 0px 0pc 5px gray;
+}
+#logo
+{
+    font-family: 'Kaushan Script', cursive;
+    color: #E51636;
+}
+.header  ul li
+{
+    display: inline;
+    padding:0 20px;
+    color:#E51636;
+    cursor: pointer;
+    font-size: 20px;
+    height: 100%;
+}
+.header ul li:hover  
+{
+    color:rgb(116, 9, 27);
+}
+.search 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search input 
+{
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    border: 2px solid #E51636;
+    outline: none;
+}
+.search i 
+{
+    background-color: #E51636;
+    padding:12px;
+    color:white;
+    cursor: pointer;
+}
+.search i:hover 
+{
+    background-color: red;
+}
+.res-container 
+{
+    margin: 40px 143px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.res-card 
+{
+    width: 220px;
+    border:1px solid gray;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:7px;
+}
+#restaurant-card-id
+{
+    text-decoration: none;
+    color:black;
+}
+.res-card h3 
+{
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+.res-card:hover 
+{
+    box-shadow: 0px 0px 5px 4px rgb(176, 175, 175);
+    /* transform: translate(1.002); */
+}
+.res-card-desc 
+{
+    display: flex;
+    justify-content: space-between;
+}
+#res-card-img 
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center;
+}
+#res-card-time 
+{
+    text-align: right;
+    font-size: 13px;
+    color: gray;
+}
+#rating 
+{
+    text-align: left;
+    background-color: #24963f;
+    color:white;
+    padding:4px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.res-card-footer 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+#rating i 
+{
+    font-size: 12px;
+}
+.footer 
+{
+    background-color: rgb(59, 58, 58);
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+}
+.footer-container h3
+{
+    margin-bottom: 20px;
+    color: rgb(155, 152, 152);
+}
+.footer-container p:hover 
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.top-rated-container 
+{
+    padding: 20px 143px;
+}
+#top-rated-btn 
+{
+    height: 50px;
+    border-radius: 6px;
+    padding:10px;
+    background-color: #E51636;
+    color:white;
+    border: none;
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#top-rated-btn:hover 
+{
+    box-shadow: 0px 0px 5px 3px gray;
+}
+#top-rated-h2 
+{
+    padding-left: 143px;
+    margin-bottom: -20px;
+    margin-top: 30px;
+}
+.shimmer-cards 
+{
+    margin: 40px 143px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.shimmer-card 
+{
+    width: 220px;
+    height: 350px;
+    border:1px solid rgb(228, 226, 226);
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+    background-color: rgb(211, 209, 209);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:7px;
+    animation: shimmerEffect 2s infinite;
+}
+.shimmer-card-img 
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center;
+    background-color: rgb(181, 179, 179);
+    animation: shimmerEffect 1s infinite;
+}
+#shimmer-p-tag 
+{
+    height: 20px;
+    width: 80px;
+    background-color:rgb(181, 179, 179);
+    border-radius: 5px;
+    margin: 0px auto;
+    animation: shimmerEffect 1s infinite;
+}
+.shimmer-p-tags 
+{
+    display: flex;
+    justify-content: space-between;
+}
+#shimmer-p-tag-1, #shimmer-p-tag-2
+{
+    height: 20px;
+    width: 80px;
+    background-color:rgb(181, 179, 179);
+    animation: shimmerEffect 1s infinite;
+    border-radius: 5px;
+}
+@keyframes shimmerEffect 
+{
+    0%, 100% {
+        background-color: rgb(210, 207, 207);
+    }
+    50% {
+        background-color: rgb(181, 179, 179);
+    }
+}
+#login-btn 
+{
+    height: 30px;
+    width: 60px;
+    background-color: #E51636;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+}
+#login-btn:hover 
+{
+    background-color: white;
+    border: 2px solid #E51636;
+    color:#E51636;
+}
+#search-btn 
+{
+    border:none;
+    background-color: #E51636;
+    padding:1px;
+}
+.error-container 
+{
+    height: 100vh;
+    width: 100vw;
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+}
+.nav-ul li a
+{
+    text-decoration: none;
+    color:#E51636;
+}
+.nav-ul li a:hover 
+{
+    color: brown;
+}
+.menu 
+{
+    margin:20px 160px;
+}
+.upper-menu-container-1 
+{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.icons 
+{
+    display: flex;
+    gap: 20px;
+}
+.icons i 
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+.icons i:hover 
+{
+    color: black;
+}
+.menu-container-main 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.menu-container-main-left
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.menu-container-main-left p 
+{
+    color:gray;
+    font-size: 15px;
+}
+.another-main-right 
+{
+    border:1px solid rgb(193, 191, 191);
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border-radius: 5px;
+}
+.main-right-p 
+{
+    color:green;
+}
+.time-container
+{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.time-container .time-container-left
+{
+    display: flex;
+    gap: 20px;
+}
+.time-container .timer-container-right button 
+{
+    padding:10px;
+    background-color: #E51636;
+    border: none;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.order-btn:hover 
+{
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.res-menu-shimmer-ui 
+{
+    height: 270px;
+    width:80vw;
+    margin: 10px auto;
+    margin-bottom: 89px;
+    margin-top: 20px;
+}
+.res-menu-shimmer-inner-0 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.res-menu-inner-0-shimmer-0 
+{
+    height: 20px;
+    width: 350px;
+    background-color: gray;
+    border-radius: 2px;
+    animation: fadein 5s infinite;
+}
+.res-menu-inner-0-shimmer-1 
+{
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 2px;
+    animation: fadein 5s infinite;
+}
+.res-menu-shimmer-inner-1 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+.res-menu-inner-1-shimmer-1 
+{
+    height: 120px;
+    width: 400px;
+    background-color: gray;
+    border-radius: 2px;
+    animation: fadein 5s infinite;
+}
+.res-menu-inner-1-shimmer-2 
+{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 2px;
+    animation: fadein 5s infinite;
+}
+.res-menu-shimmer-inner-2 
+{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.res-menu-inner-2-shimmer-1, .res-menu-inner-2-shimmer-2
+{
+    height: 30px;
+    width: 90px;
+    background-color: gray;
+    border-radius: 2px;
+    animation: fadein 5s infinite;
+}
+.button-shimmer 
+{
+    height: 30px;
+    width: 80px;
+    background-color: gray;
+    border-radius: 2px;
+    animation: fadein 5s infinite;
+    
+}
+@keyframes fadein 
+{
+    0%, 100% {
+        background-color:gray;
+    }
+    50% {
+        background-color:whitesmoke;
+    }
+}
