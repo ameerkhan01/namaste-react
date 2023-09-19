@@ -49,7 +49,8 @@ const RestaurantMenu = () => {
                   </p>
                 </div>
                 <div className="menu-container-main-right">
-                    <div className="another-main-right">
+                    <div className="another-main-right"> 
+                    
                     <p className="main-right-p">
                         <i class="fa-solid fa-star"></i>
                         {avgRating}
