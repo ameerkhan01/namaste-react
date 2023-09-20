@@ -2,3 +2,24 @@
 {
     margin: 50px 143px;
 }
+.components-container 
+{
+    display: flex;
+    justify-content: space-between;
+    padding:40px 0;
+}
+.state-btn 
+{
+    padding:10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 10px 0;
+    background-color: red;
+    color:white; 
+    cursor: pointer;
+    outline: none;
+}
+h3 
+{
+    color:blue;
+}
