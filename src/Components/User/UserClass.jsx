@@ -3,7 +3,6 @@ import './User.css';
 import { useState } from 'react';
 
 class UserClass extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
