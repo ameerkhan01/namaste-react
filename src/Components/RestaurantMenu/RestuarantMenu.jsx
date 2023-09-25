@@ -3,23 +3,15 @@ import { useEffect, useState } from "react";
 import RestaurantMenuShimmer from "./RestaurantMenuShimmer";
 import Recommended from "./Recommended";
 import { useParams } from "react-router-dom";
+import useRestaurantMenu from "../../utils/CustomHooks/useRestaurantMenu";
 
 
 const RestaurantMenu = () => {
 
-    const [resInfo, setResInfo] = useState(null);
     const {resId} = useParams();
 
-    useEffect(()=> {
-        fetchMenu();
-    },[]);
+    const resInfo = useRestaurantMenu(resId);
 
-    const fetchMenu = async () => {
-        const data = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.0826802&lng=80.2707184&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`); //14096
-        const json = await data.json();
-        console.log(json)
-        setResInfo(json)
-    }
     if(resInfo === null) return <RestaurantMenuShimmer /> 
 
     const {itemCards} = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
