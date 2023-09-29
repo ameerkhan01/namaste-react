@@ -9,7 +9,7 @@ import useOnlineStatus from "../utils/CustomHooks/useOnlineStatus";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
-  const [searctText, setSearchText] = useState('');
+  const [searctText, setSearchText] = useState("");
 
   useEffect(() => {
     fetchData();
