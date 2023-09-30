@@ -2,11 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/CustomHooks/useOnlineStatus";
+import UserContext from "./UserContext";
+import { useContext } from "react";
 
 const Header = () => {
 
   const [ btnName, setBtnName] = useState('login');
   const onlineStatus = useOnlineStatus();
+  const {userName} = useContext(UserContext);
 
   return (
     <div className="header">
@@ -30,6 +33,7 @@ const Header = () => {
           }}
           >{btnName}</button>
           </li>
+          <li>{userName}</li>
         </ul>
       </div>
     </div>

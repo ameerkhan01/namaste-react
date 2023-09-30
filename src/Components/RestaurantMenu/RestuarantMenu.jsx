@@ -16,7 +16,6 @@ const RestaurantMenu = () => {
 
     const {itemCards} = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
 
-
     const {name, city, cuisines, areaName, avgRating, totalRatingsString, costForTwoMessage} = resInfo?.data?.cards[0]?.card?.card?.info;
     const {lastMileTravel, deliveryTime} = resInfo?.data?.cards[0]?.card?.card?.info?.sla;
     const {message} = resInfo?.data?.cards[0]?.card?.card?.info?.feeDetails;
@@ -68,7 +67,6 @@ const RestaurantMenu = () => {
             <div className="recommended-container">
                 <h2>Recommended</h2>
                 {itemCards.map((itemCard) => {
-                    console.log(itemCard)
                     return ( <Recommended key={itemCard?.card?.info?.id} itemCardValue={itemCard} /> )
                 })}
             </div>

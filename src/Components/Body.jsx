@@ -1,35 +1,36 @@
 import React from "react";
-import RestaurantCard from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import RestaurantCard, {withVegLabel} from "./RestaurantCard";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/CustomHooks/useOnlineStatus";
-
+import UserContext from "./UserContext";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searctText, setSearchText] = useState("");
+  const { setUserInfo, userName } = useContext(UserContext);
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [])
+
+  const VegRestaurantCard = withVegLabel(RestaurantCard);
 
   const fetchData = async () => {
     const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0826802&lng=80.2707184&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
     const json = await data.json();
-    console.log(json)
     
-    // console.log(json);
     setListOfRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilteredRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    console.log(filteredRestaurant)
   };
 
   const onlineStatus = useOnlineStatus();
   if(onlineStatus === false) {
     return <h1>Looks Like you are offline, please checl your internet connection!</h1>
   }
+
 
   return listOfRestaurants.length === 0 ? <Shimmer /> : (
     <div className="body">
@@ -49,6 +50,14 @@ const Body = () => {
 
         <i class="fa-solid fa-magnifying-glass"></i>
         </button>
+
+        <input 
+        type="text" 
+        placeholder="Enter username" 
+        className="user-name-input" 
+        value={userName}
+        onChange={(e) => setUserInfo(e.target.value)}
+        />
         
       </div>
       <div className="top-rated-container">
@@ -70,7 +79,8 @@ const Body = () => {
       <div className="res-container">
         {filteredRestaurant.map((restaurant) => (
         <Link to={'/restaurants/' + restaurant.info.id} key={restaurant.info.id} id="restaurant-card-id">
-          <RestaurantCard resData={restaurant} />
+         {restaurant?.info?.veg ? <VegRestaurantCard resData={restaurant} /> :  <RestaurantCard resData={restaurant} />}
+         {/* <RestaurantCard resData={restaurant} /> */}
         </Link>
         ))}
       </div>
