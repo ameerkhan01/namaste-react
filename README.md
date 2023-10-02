@@ -30,3 +30,5 @@
 # Routing in web apps
 - Client Side Routing
 - Server Side Routing
+
+# Redux
