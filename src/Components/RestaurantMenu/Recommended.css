@@ -1,0 +1,16 @@
+.accordion
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.accordion button 
+{
+    padding: 0 5px;
+    background-color: red;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px gray;
+    cursor: pointer;
+}

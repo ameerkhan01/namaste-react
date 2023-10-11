@@ -1,0 +1,47 @@
+.empty-cart 
+{
+    height: 56.5vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.dis-item
+{
+    display: flex;
+    gap: 20px;
+}
+.cart-item
+{
+    display: flex;
+}
+.cart-container 
+{
+    padding: 100px 0 0 100px;
+}
+table,th, tr, td 
+{
+    border:2px solid black;
+    border-collapse: collapse;
+    padding:10px;
+}
+table 
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.clr-btn
+{
+    border:none;
+    padding:10px;
+    background-color: red;
+    color:white;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px gray;
+    cursor: pointer;
+    margin: 15px 0px 0 140px;
+}
+.cart-container h1 
+{
+    margin: 15px 0px 0 140px;
+}
