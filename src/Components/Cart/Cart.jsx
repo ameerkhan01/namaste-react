@@ -28,7 +28,10 @@ const Cart = () => {
                 </tr>
             ))}
             </table>
-            <button className="clr-btn">Clear Cart</button>
+            <button 
+            className="clr-btn"
+            onClick={handleClick}
+            >Clear Cart</button>
         </div>
     )
 }
