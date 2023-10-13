@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
-        <h1 id="logo">Namaste Biriyani</h1>
+        <h1 id="logo">Namaste Food</h1>
       </div>
       <div className="nav-items">
         <ul className="nav-ul">

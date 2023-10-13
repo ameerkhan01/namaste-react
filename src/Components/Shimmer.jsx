@@ -4,7 +4,7 @@ const ShimmerCard = () => {
     return (
         <>
         {Array.from({ length: 20 }).map((_, index) => (
-            <div className="shimmer-card">
+            <div className="shimmer-card" key={index}>
                 <div className="shimmer-card-img"></div>
                 <p id="shimmer-p-tag"></p>
                 <div className="shimmer-p-tags">

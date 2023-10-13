@@ -3,8 +3,8 @@ import React from "react";
 const Footer1 = () => {
   return (
     <div className="footer-container">
-      <h2 id="logo">Namaste Biriyani</h2>
-      <p>2023 bhai biriyani limited</p>
+      <h2 id="logo">Namaste Food</h2>
+      <p>2023 Namaste Food limited</p>
     </div>
   );
 };

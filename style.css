@@ -174,16 +174,11 @@
     background-color: #E51636;
     color:white;
     border: none;
-    box-shadow: 0px 0px 5px gray;
     cursor: pointer;
     transition: all 100ms ease-in-out;
     display: flex;
     align-items: center;
     gap: 10px;
-}
-#top-rated-btn:hover 
-{
-    box-shadow: 0px 0px 5px 3px gray;
 }
 #top-rated-h2 
 {

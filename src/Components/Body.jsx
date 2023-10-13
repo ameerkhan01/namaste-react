@@ -32,7 +32,6 @@ const Body = () => {
     return <h1>Looks Like you are offline, please checl your internet connection!</h1>
   }
 
-
   return listOfRestaurants.length === 0 ? <Shimmer /> : (
     <div className="body">
       <div className="search">
@@ -73,7 +72,7 @@ const Body = () => {
           }}
         >
           Filter Top Rated Restaurant
-          <i class="fa-solid fa-filter"></i>
+          <i className="fa-solid fa-filter"></i>
         </Button>
       </div>
       <h2 id="top-rated-h2">Top Rated Restaurants in Chennai</h2>
