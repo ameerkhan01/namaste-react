@@ -2,6 +2,7 @@ import React from "react";
 import './Recommended.css';
 import { addItem } from "../Redux/cartSlice";
 import { useDispatch } from "react-redux";
+import { Button } from "@mui/material";
 
 const Recommended = (props) => {
 
@@ -22,7 +23,13 @@ const Recommended = (props) => {
             <p>-</p>
             <p>₹ {(price/100).toFixed(2)}</p>
             </div>
-            <button onClick={() => handleClick([name,price])}>ADD</button>
+            {/* <button onClick={() => handleClick([name,price])}>ADD</button> */}
+            <Button 
+            variant="contained"
+            id="add-item-btn"
+            onClick={() => handleClick([name,price])}>
+                Add item
+            </Button>
             </div>
         </div>
     )

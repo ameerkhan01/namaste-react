@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/CustomHooks/useOnlineStatus";
 import UserContext from "./UserContext";
 import { useContext } from "react";
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import { useSelector } from "react-redux";
+
 
 const Header = () => {
 

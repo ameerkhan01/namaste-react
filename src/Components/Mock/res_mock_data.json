@@ -1,0 +1,96 @@
+{
+    "info": {
+        "id": "561677",
+        "name": "The BVK Biryani (Bai Veetu Kalyanam)",
+        "cloudinaryImageId": "f75bed5b83ac0a8d50acc4b478f2f062",
+        "locality": "Thiruvengadam Street",
+        "areaName": "Egmore",
+        "costForTwo": "₹550 for two",
+        "cuisines": [
+            "Biryani",
+            "South Indian"
+        ],
+        "avgRating": 4,
+        "feeDetails": {
+            "restaurantId": "561677",
+            "fees": [
+                {
+                    "name": "BASE_DISTANCE",
+                    "fee": 3900
+                },
+                {
+                    "name": "BASE_TIME"
+                },
+                {
+                    "name": "ANCILLARY_SURGE_FEE"
+                }
+            ],
+            "totalFee": 3900
+        },
+        "parentId": "337996",
+        "avgRatingString": "4.0",
+        "totalRatingsString": "1K+",
+        "sla": {
+            "deliveryTime": 18,
+            "lastMileTravel": 1,
+            "serviceability": "SERVICEABLE",
+            "slaString": "18 mins",
+            "lastMileTravelString": "1.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2023-10-13 03:00:00",
+            "opened": true
+        },
+        "badges": {
+            "textExtendedBadges": [
+                {
+                    "iconId": "guiltfree/GF_Logo_android_3x",
+                    "shortDescription": "options available",
+                    "fontColor": "#7E808C"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "",
+                                "fontColor": "#7E808C",
+                                "iconId": "guiltfree/GF_Logo_android_3x",
+                                "shortDescription": "options available"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "₹150 OFF",
+            "subHeader": "ABOVE ₹399",
+            "discountTag": "FLAT DEAL"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/the-bvk-biryani-bai-veetu-kalyanam-thiruvengadam-street-egmore-chennai-561677",
+        "type": "WEBLINK"
+    }
+}

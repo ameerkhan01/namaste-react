@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/CustomHooks/useOnlineStatus";
 import UserContext from "./UserContext";
+import { Button } from "@mui/material";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -61,7 +62,8 @@ const Body = () => {
         
       </div>
       <div className="top-rated-container">
-        <button
+        <Button
+        variant="contained"
           id="top-rated-btn"
           onClick={() => {
             const filteredList = listOfRestaurants.filter(
@@ -72,7 +74,7 @@ const Body = () => {
         >
           Filter Top Rated Restaurant
           <i class="fa-solid fa-filter"></i>
-        </button>
+        </Button>
       </div>
       <h2 id="top-rated-h2">Top Rated Restaurants in Chennai</h2>
       

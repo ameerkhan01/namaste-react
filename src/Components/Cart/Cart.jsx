@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import './Cart.css';
 import { clearCart } from "../Redux/cartSlice";
 import { useDispatch } from "react-redux";
+import { Button } from "@mui/material";
 
 const Cart = () => {
 
@@ -28,10 +29,13 @@ const Cart = () => {
                 </tr>
             ))}
             </table>
-            <button 
-            className="clr-btn"
+            <Button 
+            variant="contained" 
+            id="clr-cart-btn"
             onClick={handleClick}
-            >Clear Cart</button>
+            >
+                clear Cart
+            </Button>
         </div>
     )
 }

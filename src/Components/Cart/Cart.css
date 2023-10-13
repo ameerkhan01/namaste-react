@@ -45,3 +45,9 @@ table
 {
     margin: 15px 0px 0 140px;
 }
+#clr-cart-btn
+{
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: red;
+}
