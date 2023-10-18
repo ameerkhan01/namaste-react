@@ -19,7 +19,6 @@ const RestaurantMenuShimmer = () => {
                 <div className="button-shimmer"></div>
             </div>
         </div>
-    )
-}
+)}
 
 export default RestaurantMenuShimmer;
