@@ -17,6 +17,7 @@ const RestaurantMenuShimmer = () => {
                 <div className="res-menu-inner-2-shimmer-2"></div>
                 </div>
                 <div className="button-shimmer"></div>
+                
             </div>
         </div>
 )}
