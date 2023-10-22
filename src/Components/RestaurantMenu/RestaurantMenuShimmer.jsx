@@ -20,5 +20,4 @@ const RestaurantMenuShimmer = () => {
             </div>
         </div>
 )}
-
 export default RestaurantMenuShimmer;
